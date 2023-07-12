@@ -35,7 +35,7 @@ describe("Calling 'getFullList'", () => {
     const expectedLength = 64;
     const expectedEntries = [...Array(expectedLength).keys()];
 
-    const projects = await getFullList(getMockedServerResponse);
+    const projects = await getFullList(getMockedServerResponse); // API is called multiple times within this function
 
     assert.strictEqual(projects.length, expectedLength);
     assert.deepStrictEqual(expectedEntries, projects);

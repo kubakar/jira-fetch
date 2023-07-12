@@ -14,9 +14,9 @@ const getJSON = async function (url, errorMsg = "data fetch failed") {
 const getPaginatedProjects = (pageIndex) => {
   const maxResults = 100; // seems to be max. possible value supported by API schema
 
-  const getUrlProjects = (startAtValue = 0) =>
+  const getUrlProjects = (offsetIndex = 0) =>
     `${inputUrl.issues}&maxResults=${maxResults}&startAt=${
-      startAtValue * maxResults
+      offsetIndex * maxResults
     }`;
 
   return getJSON(getUrlProjects(pageIndex));

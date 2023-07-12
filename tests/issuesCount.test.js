@@ -24,8 +24,8 @@ const generateTestData = () => {
 describe("Calling 'getIssuesCount'", function () {
   it("will properly find all issues", function () {
     const testData = generateTestData();
-    const reducer = getIssuesCount(testData);
-    assert.deepStrictEqual(reducer, {
+    const results = getIssuesCount(testData);
+    assert.deepStrictEqual(results, {
       Frontend: 3,
       Synchronization: 2,
       Templates: 2,

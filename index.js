@@ -22,7 +22,7 @@ const fetchAndWrite = async () => {
   logger.info("Function has started");
 
   try {
-    // 1. get components and filter 'lead-less' (calling non-paginated endpoint)
+    // 1. get components and filter 'lead-less' ones (calling non-paginated endpoint)
     const components = await getJSON(inputUrl.components);
     const vacantComponents = components
       .filter((c) => c.lead == null)
@@ -32,7 +32,7 @@ const fetchAndWrite = async () => {
     // 2. get all issues and calculate count for each component (calling paginated endpoint)
     const projects = await getFullList(getPaginatedProjects);
     const issueSummary = getIssuesCount(projects);
-    logger.info({ issueSummary }, "Issues fetched");
+    logger.info({ issueSummary }, `All issues fetched (${projects.length})`);
 
     // 3. grab data from 1&2 to build final struct
     const issuesWithoutLead = vacantComponents.reduce(
