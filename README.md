@@ -11,5 +11,6 @@ Please use node v18 (or higher) because node-native `fetch API` is used.
 
 ## Commands
 
-- run `node index.js` in order to start the app and generate _output.txt_ file
+- run `npm i` install dependencies
+- run `npm start` in order to start the app and generate _output.txt_ file
 - run `npm run test` in order to start test suite
