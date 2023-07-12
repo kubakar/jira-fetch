@@ -28,7 +28,7 @@ module.exports.getIssuesCount = (projects) => {
  */
 module.exports.dataToTextMessage = (data) => {
   const textMessage =
-    "'Lead-less' components with number of occurrences: \n" +
+    "Issues tagged with 'lead-less' components and number of occurrences: \n" +
     JSON.stringify(data).replaceAll(/,|{|}/gi, "\n").replaceAll(":", "\t");
 
   return textMessage;

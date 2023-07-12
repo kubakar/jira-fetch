@@ -1,4 +1,4 @@
-'Lead-less' components with number of occurrences: 
+Issues tagged with 'lead-less' components and number of occurrences: 
 
 "Backend"	65
 "Synchronization"	12
