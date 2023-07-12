@@ -1,0 +1,5 @@
+'Lead-less' components with number of occurrences: 
+
+"Backend"	65
+"Synchronization"	12
+"Templates"	25

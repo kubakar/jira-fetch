@@ -1,0 +1,18 @@
+{
+  "name": "jira-fetch",
+  "version": "1.0.0",
+  "description": "fetching data from jira API",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.test.js"
+  },
+  "author": "kubakar",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.44.0",
+    "mocha": "^10.2.0"
+  },
+  "dependencies": {
+    "pino": "^8.14.1"
+  }
+}
